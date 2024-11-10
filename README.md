@@ -3,21 +3,6 @@
 ## 📋 **Descrição do Projeto**
 Este projeto visa aplicar conceitos de modelagem de dados para criar um banco de dados relacional voltado para armazenar e analisar informações sobre a produção agrícola no Brasil. Utilizando dados de órgãos como **CONAB**, **IBGE**, **Embrapa**, e **MAPA**, o projeto foca em armazenar informações sobre pragas, culturas agrícolas, métodos de controle, produtos utilizados e condições climáticas favoráveis.
 
-## 📂 **Estrutura do Repositório**
-
-```bash
-📦 projeto-modelagem-agricola
-├── 📁 img
-│   ├── datamodeler.png              # Captura de tela do diagrama criado no Oracle Data Modeler
-│   ├── diagrama MER.png             # Imagem do Diagrama Entidade-Relacionamento (MER)
-│   └── diagrama entidade relacionamento.png # Imagem do Diagrama de Entidade-Relacionamento (DER)
-├── 📝 consultas.sql                 # Arquivo contendo consultas SQL para análise dos dados
-├── 📝 create.sql                    # Script SQL para criação das tabelas do banco de dados
-├── 📝 dicionario.ods                # Dicionário de dados em formato ODS (LibreOffice/Excel)
-├── 📝 ER.xml                        # Arquivo XML do Diagrama Entidade-Relacionamento (exportado do SQLDesigner)
-└── 📝 README.md                     # Documentação do projeto
-
-
 ## 📑 Conteúdo dos Arquivos
     - 1. Diretório img
         - Este diretório contém as imagens dos diagramas criados durante a modelagem do banco de dados:
@@ -44,3 +29,17 @@ Este projeto visa aplicar conceitos de modelagem de dados para criar um banco de
 
     - 5. Arquivo ER.xml
         - O ER.xml é o arquivo exportado do SQLDesigner contendo o Diagrama Entidade-Relacionamento (DER). Ele pode ser importado novamente na ferramenta para ajustes ou visualização.
+
+## 📂 **Estrutura do Repositório**
+
+```bash
+📦 projeto-modelagem-agricola
+├── 📁 img
+│   ├── datamodeler.png              # Captura de tela do diagrama criado no Oracle Data Modeler
+│   ├── diagrama MER.png             # Imagem do Diagrama Entidade-Relacionamento (MER)
+│   └── diagrama entidade relacionamento.png # Imagem do Diagrama de Entidade-Relacionamento (DER)
+├── 📝 consultas.sql                 # Arquivo contendo consultas SQL para análise dos dados
+├── 📝 create.sql                    # Script SQL para criação das tabelas do banco de dados
+├── 📝 dicionario.ods                # Dicionário de dados em formato ODS (LibreOffice/Excel)
+├── 📝 ER.xml                        # Arquivo XML do Diagrama Entidade-Relacionamento (exportado do SQLDesigner)
+└── 📝 README.md                     # Documentação do projeto
