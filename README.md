@@ -40,6 +40,6 @@ Este projeto visa aplicar conceitos de modelagem de dados para criar um banco de
 │   └── diagrama entidade relacionamento.png # Imagem do Diagrama de Entidade-Relacionamento (DER)
 ├── 📝 consultas.sql                 # Arquivo contendo consultas SQL para análise dos dados
 ├── 📝 create.sql                    # Script SQL para criação das tabelas do banco de dados
-├── 📝 dicionario.ods                # Dicionário de dados em formato ODS (LibreOffice/Excel)
+├── 📝 dicionario.pdf                # Dicionário de dados em formato ODS (LibreOffice/Excel)
 ├── 📝 ER.xml                        # Arquivo XML do Diagrama Entidade-Relacionamento (exportado do SQLDesigner)
 └── 📝 README.md                     # Documentação do projeto
