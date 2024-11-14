@@ -17,44 +17,28 @@
       <type label="Datetime" length="0" sql="DATETIME" quote="'"/>
       <type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
     </group>
-  </datatypes><table x="760" y="391" name="Clima">
+  </datatypes><table x="658" y="114" name="Praga">
 <row name="id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="Praga" row="clima_id" />
-</row>
-<row name="descricao" null="0" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>'NULL'</default></row>
-<key type="PRIMARY" name="">
-<part>id</part>
-</key>
-</table>
-<table x="925" y="363" name="Praga">
-<row name="id" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="praga_cultura" row="praga_id" />
+<relation table="praga_cultura" row="praga_id" />
 </row>
 <row name="nome" null="0" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>'NULL'</default></row>
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
 <row name="estagio" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="nivel_infestacao" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
-<row name="clima_id" null="1" autoincrement="0">
+<row name="clima_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="new field" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
+</row>
 <key type="PRIMARY" name="">
 <part>id</part>
-<part>clima_id</part>
 </key>
 </table>
-<table x="1097" y="361" name="praga_cultura">
+<table x="355" y="228" name="praga_cultura">
 <row name="praga_id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -66,24 +50,48 @@
 <part>praga_id</part>
 </key>
 </table>
-<table x="1303" y="355" name="cultura">
-<row name="id" null="1" autoincrement="1">
+<table x="770" y="472" name="Clima">
+<row name="id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<default>NULL</default><relation table="Praga" row="clima_id" />
+</row>
+<row name="descricao" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>'NULL'</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="461" y="445" name="cultura">
+<row name="id" null="0" autoincrement="1">
+<datatype>INTEGER</datatype>
+</row>
 <row name="tipo_cultura" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="estagio_fenologico" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="safra" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="area_plantada" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="producao" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="produtividade" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="924" y="602" name="Produto">
-<row name="id" null="1" autoincrement="1">
+<table x="1399" y="353" name="Produto">
+<row name="id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="metodo_controle_produto" row="produto_id" />
+<relation table="metodo_controle_produto" row="produto_id" />
 </row>
 <row name="nome_produto" null="0" autoincrement="0">
 <datatype>VARCHAR</datatype>
@@ -98,22 +106,22 @@
 <part>id</part>
 </key>
 </table>
-<table x="1124" y="614" name="metodo_controle_produto">
-<row name="produto_id" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<table x="1292" y="151" name="metodo_controle_produto">
 <row name="produto_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="metodo_controle" row="id" />
+</row>
+<row name="metodo_id" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<relation table="metodo_controle" row="id" />
 </row>
 <key type="PRIMARY" name="">
 <part>produto_id</part>
 </key>
 </table>
-<table x="1403" y="616" name="metodo_controle">
-<row name="id" null="1" autoincrement="1">
+<table x="980" y="124" name="metodo_controle">
+<row name="id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
+</row>
 <row name="metodo" null="0" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>'NULL'</default></row>
@@ -123,12 +131,16 @@
 <row name="dose_recomendada" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
-<row name="metodo_alternativo" null="1" autoincrement="0">
+<row name="metodo_alternativo" null="0" autoincrement="0">
 <datatype>VARCHAR</datatype>
-<default>NULL</default></row>
+<default>'NULL'</default></row>
 <row name="periodo_ideal" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="praga_id" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<relation table="Praga" row="id" />
+</row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
