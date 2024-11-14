@@ -69,12 +69,15 @@
 <row name="tipo_cultura" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
-<row name="estagio_fenologico" null="1" autoincrement="0">
+<row name="estadio_fenologico" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="safra" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="estado" null="0" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>'NULL'</default></row>
 <row name="area_plantada" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
@@ -110,7 +113,7 @@
 <row name="produto_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 </row>
-<row name="metodo_id" null="0" autoincrement="0">
+<row name="metodo_controle_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <relation table="metodo_controle" row="id" />
 </row>

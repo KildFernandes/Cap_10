@@ -106,7 +106,9 @@ CREATE TABLE Metodo_Controle (
   produto_recomendado VARCHAR2(100),
   dose_recomendada VARCHAR2(50),
   metodo_alternativo VARCHAR2(100),
-  periodo_ideal VARCHAR2(100)
+  periodo_ideal VARCHAR2(100),
+  praga_id NUMBER,
+  FOREIGN KEY (praga_id) REFERENCES Praga(id)
 );
 
 CREATE OR REPLACE TRIGGER trg_metodo_controle
